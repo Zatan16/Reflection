@@ -115,9 +115,7 @@ function distance(vector1, vector2) {
 
 [...document.getElementsByTagName("input")].filter(v => v.type === "text").filter(v => v.classList.contains("x-display") || v.classList.contains("y-display") || v.classList.contains("angle-display")).forEach((v, i) => {
 	v.addEventListener("change", e => {
-		if(v.classList.contains()) {
-			[...document.getElementsByTagName("input")].filter(v => v.type === "range")[i].value = v.value;
-		}
+		[...document.getElementsByTagName("input")].filter(v => v.type === "range")[i].value = v.value;
 	});
 });
 
