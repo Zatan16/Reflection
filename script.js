@@ -22,7 +22,7 @@ function mirror(position, angle, length, index, inverted) {
 			this.inverted = !!inverted;
 
 			let attributes = document.getElementById("attributes");
-			attributes.insertAdjacentHTML(`
+			attributes.insertAdjacentHTML("beforeend", `
 				Mirror${index} X: <input type="text" value="50" class="mirror ${index} x-display" style="width:50;"> <input type="range" class="mirror ${index} x" value="50">
 				&nbsp;Mirror${index} Y: <input type="text" value="50" class="mirror ${index} y-display" style="width:50;"> <input type="range" class="mirror ${index} y" value="50">
 				&nbsp;Mirror${index} Angle: <input type="text" value="0" class="mirror ${index} angle-display" style="width:50;"> <input type="range" class="mirror ${index} angle" value="0"> <br>`);
